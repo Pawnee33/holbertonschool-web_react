@@ -61,3 +61,14 @@ function executeWork(
     }
     return employee.workTeacherTasks();
 }
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(
+    todayClass: Subjects
+): string {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    }
+    return 'Teaching History';
+}
